@@ -1,0 +1,137 @@
+@charset 'UTF-8';
+/* Base
+------------------------------------------------------------*/
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+  font-family: '游ゴシック', YuGothic, 'メイリオ', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  letter-spacing: .1em;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  margin-top: 0;
+}
+
+p {
+  margin-top: 0;
+  line-height: 1.6;
+}
+
+.flexible-images {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Align
+------------------------------------------------------------*/
+.title-center, .text-center, .block-center, .footer-center, .button
+{
+  text-align: center;
+}
+
+/* Layout/Font
+------------------------------------------------------------*/
+#services .container {
+  margin: 0 auto;
+  width: 90%;  /* sectionの中のインナーボックスをウィンドウ幅に対して90%に */
+  display: -webkit-flex;
+  display: flex;
+} 
+.service-box {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-flex: 1;
+  flex: 1;
+  margin: 0px 10px;
+  padding: 20px;
+  justify-content: space-between;
+}
+
+.text-center {
+  box-sizing: border-box;
+  background-color: #dcdcdc;
+  color: #000000;
+}
+
+.block-center {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #696969;
+  color: #f0f8ff;
+  padding: 10px;
+}
+
+.title-center, .footer-center  {
+  margin-top: 40px;
+  font-size: 3rem;
+}
+
+.text-center{
+    font-size: 2rem;    
+}
+
+#services h1, .footer-center {
+  color: #4d4d4d;
+}
+
+#services h1 {
+  font-size: 3.2rem;
+}
+
+.service-box h3 {
+  color: #d2691e;
+  padding: 10px;
+}
+
+footer {
+  margin-top: 10px;
+  background-color: #dcdcdc;
+  height: 180px;
+  width: 100%;
+}
+.footer-center {
+  font-size: 2.5rem;
+}
+
+.button {
+  font-size: 2.5rem;
+  display:inline-block;;
+  width: 240px;
+  height:50px;
+  line-height: 50px;
+  color: #FFF;
+  text-decoration: none;
+  background-color: #d2691e; /*ボタン色*/
+  border-radius: 5px; /*角丸*/
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.footer_box {
+  padding: 5px 0; /* 内側の余白　上下5px　左右0 */
+
+}
+
+.button_wrapper {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
